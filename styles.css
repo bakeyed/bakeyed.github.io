@@ -1,0 +1,133 @@
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+.vt323-regular {
+  font-family: "VT323", "monospace";
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background-color: rgb(4, 8, 30);
+  color: white;
+  font-family: "monospace", "consolas", "Verdana", "Arial";
+  overflow: visible;
+}
+header {
+  width: 100%;
+  height: 50px;
+  background-color: rgb(166, 181, 255);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+}
+
+nav {
+  width: 50%;
+  max-width: 300px;
+  height: 50px;
+}
+
+nav > ul {
+  display: flex;
+  font-family: "VT323", "monospace";
+  font-size: 20px;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-inline-start: 0;
+  margin-block: 0;
+  height: 100%;
+}
+
+nav > ul > li {
+  color: #dfdfe2;
+  background-color: rgb(4, 8, 30);
+  margin: 0 0.2rem;
+  padding: 0.35rem;
+  display: block;
+}
+
+nav > ul > li:hover {
+  background-color: #dfdfe2;
+  color: rgb(166, 181, 255);
+  cursor: pointer;
+}
+
+li > a {
+  color: inherit;
+  text-decoration: none;
+}
+
+main {
+  padding-top: 50px;
+}
+
+section {
+  width: 80%;
+  margin: 0 auto 10px auto;
+  max-width: 1000px;
+}
+
+#image-container {
+  padding: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+#image {
+  width: 70%;
+  border: 3px solid #dfdfe2;
+}
+h1,
+h2 {
+  font-family: "Courier New", Courier, monospace, Verdana, Tahoma;
+  font-size: large;
+}
+
+h2 {
+  border-bottom: 3px solid #dfdfe2;
+  margin-top: 0px;
+  padding-top: 30px;
+}
+
+p {
+  text-align: center;
+  margin-top: 5px;
+  font-size: 18px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  max-width: 1400px; /* Adjust max-width as needed */
+  margin: 0 auto;
+  padding: 20px 10px;
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 250px; /* Adjust max-width as needed */
+  height: auto; /* Let the height adjust based on the width */
+  object-fit: cover;
+}
+
+.gallery::after {
+  content: "";
+  width: 350px;
+}
+
+footer {
+  background-color: rgb(166, 181, 255);
+  text-align: center;
+}
+footer,
+footer a {
+  color: rgb(225, 228, 247);
+}
