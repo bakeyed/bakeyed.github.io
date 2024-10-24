@@ -101,6 +101,16 @@ p {
   font-size: 18px;
 }
 
+.projects-p {
+  font-size: 16px;
+  margin-top: 3px;
+  padding-inline: 2px;
+  text-align: left;
+}
+.green {
+  color: rgb(129, 219, 64);
+}
+
 .gallery {
   display: flex;
   flex-wrap: wrap;
